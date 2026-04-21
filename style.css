@@ -1,0 +1,127 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 15px 20px;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: lightblue;
+    padding: 60px 20px;
+}
+
+/* Titles */
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+    border: 3px solid black;
+}
+
+/* Box Model */
+.box1 {
+    background: lightgreen;
+    padding: 20px;
+    margin: 40px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.box2 {
+    background: lightcoral;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* Flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.item {
+    background: orange;
+    padding: 20px;
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* About */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1, .box2 {
+        margin: 20px;
+    }
+}
