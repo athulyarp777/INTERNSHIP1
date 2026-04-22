@@ -1,0 +1,247 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial;
+}
+
+body{
+  background:#f5f5f5;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  background:black;
+  color:white;
+}
+
+.links a{
+  color:white;
+  margin-left:15px;
+  text-decoration:none;
+}
+
+/* HERO */
+.hero{
+  height:70vh;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+              url("hero.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+.btn{
+  background:red;
+  padding:10px 20px;
+  color:white;
+  text-decoration:none;
+  margin-top:10px;
+}
+
+/* CARDS */
+.cards{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  padding:40px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:white;
+  width:250px;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.card h3, .card p, .price{
+  padding:10px;
+}
+
+.price{
+  color:red;
+  font-weight:bold;
+}
+
+/* ABOUT */
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* NAVBAR */
+.navbar {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* ABOUT CONTAINER */
+.about-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* ABOUT CARD (PREMIUM STYLE) */
+.about-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* Premium gradient color */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+
+    color: white;
+    padding: 40px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    gap: 40px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.about-card:hover {
+    transform: scale(1.02);
+}
+
+/* REVERSE CARD */
+.about-card.reverse {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE */
+.about-card img {
+    width: 220px;
+    border-radius: 15px;
+}
+
+/* TEXT */
+.about-card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.about-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* TEAM TITLE */
+.team-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+/* TEAM SECTION */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+/* TEAM CARD */
+.team-card {
+    background: #7f9faa;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    transition: 0.3s;
+}
+
+/* TEAM HOVER */
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+/* TEAM IMAGE */
+.team-card img {
+    width: 150px;
+    border-radius: 15px;
+}
+
+/* FOOTER */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* FIX ZOOM ISSUE */
+html {
+    zoom: 100%;
+}
+/* CONTACT */
+.contact-section{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  padding:30px;
+  flex-wrap:wrap;
+}
+
+.order-form{
+  background:white;
+  padding:20px;
+  width:300px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea{
+  width:100%;
+  margin:10px 0;
+  padding:8px;
+}
+
+button{
+  width:100%;
+  padding:10px;
+  background:red;
+  color:white;
+  border:none;
+}
+
+.contact-image img{
+  width:300px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:15px;
+  background:black;
+  color:white;
+}
