@@ -7,9 +7,14 @@
 
 <h1>Functions & Arrays</h1>
 
-<h2 id="result"></h2>
-<button onclick="checkNumber()">Check Even/Odd</button>
+<h3>Even or Odd Checker</h3>
 
+<input type="number" id="num" placeholder="Enter a number">
+<button onclick="checkNumber()">Check</button>
+
+<h2 id="result"></h2>
+
+<h3>Items List</h3>
 <ul id="list"></ul>
 
 <script>
@@ -20,7 +25,8 @@ function checkEvenOdd(num) {
 
 // Button function
 function checkNumber() {
-  let result = checkEvenOdd(7);
+  let value = document.getElementById("num").value;
+  let result = checkEvenOdd(value);
   document.getElementById("result").innerHTML = result;
 }
 
