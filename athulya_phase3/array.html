@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Task 2</title>
+</head>
+<body>
+
+<h1>Functions & Arrays</h1>
+
+<h2 id="result"></h2>
+<button onclick="checkNumber()">Check Even/Odd</button>
+
+<ul id="list"></ul>
+
+<script>
+// Even/Odd Function
+function checkEvenOdd(num) {
+  return num % 2 === 0 ? "Even" : "Odd";
+}
+
+// Button function
+function checkNumber() {
+  let result = checkEvenOdd(7);
+  document.getElementById("result").innerHTML = result;
+}
+
+// Array
+let items = ["Pen", "Book", "Pencil"];
+
+// Display items
+let list = document.getElementById("list");
+items.forEach(item => {
+  let li = document.createElement("li");
+  li.textContent = item;
+  list.appendChild(li);
+});
+</script>
+
+</body>
+</html>
